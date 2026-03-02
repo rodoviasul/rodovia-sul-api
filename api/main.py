@@ -23,6 +23,10 @@ app = FastAPI(
 def health_check():
     return {"status": "ok", "service": "rodoviasul-parquet-api"}
 
+@app.get("/favicon.ico", include_in_schema=False)
+async def favicon():
+    return RedirectResponse(url="http://www.rodoviasul.com.br/img/favicon.png")
+
 @app.get("/api/v1/tables", dependencies=[Depends(get_api_key)])
 def list_tables():
     """
