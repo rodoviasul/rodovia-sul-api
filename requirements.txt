@@ -1,5 +1,6 @@
 mysql-connector-python
-pandas>=2.0.0
+numpy<2.0.0
+pandas>=2.1.0
 sqlalchemy
 python-dotenv>=1.0.0
 cryptography
@@ -9,6 +10,6 @@ uvicorn[standard]>=0.27.0
 duckdb>=0.10.0
 pydantic-settings>=2.1.0
 boto3>=1.34.0
-pyarrow
+pyarrow>=15.0.0
 pytest>=8.0.0
 httpx>=0.27.0
