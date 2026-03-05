@@ -1,6 +1,8 @@
 mysql-connector-python
 numpy==1.26.4
 pandas==2.2.2
+pytz>=2024.1
+python-dateutil>=2.8.2
 sqlalchemy
 python-dotenv>=1.0.0
 cryptography
